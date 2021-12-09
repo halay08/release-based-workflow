@@ -10,7 +10,7 @@ var sprites = {
 };
 
 var enemies = {
-    starCtx.fillStyle = "#000";
+  straight: { x: 0,   y: -50, sprite: 'enemy_ship', health: 10,
               E: 100 },
   ltr:      { x: 0,   y: -100, sprite: 'enemy_purple', health: 10,
               B: 75, C: 1, E: 100, missiles: 2  },
@@ -91,7 +91,7 @@ var Starfield = function(speed,opacity,numStars,clear) {
   // If the clear option is set,
   // make the background black instead of transparent
   if(clear) {
-    starCtx.fillStyle = "#FFF";
+    starCtx.fillStyle = "#0F0";
     starCtx.fillRect(0,0,stars.width,stars.height);
   }
 
